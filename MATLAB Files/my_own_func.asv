@@ -1,0 +1,6 @@
+%we are 
+sample = linspace(0,0.2,100);
+sin_s = 10*sin(2*pi*10*sample);
+noise = 2*randn(size(sample));
+noise_s = sin_s + noise_s;
+
