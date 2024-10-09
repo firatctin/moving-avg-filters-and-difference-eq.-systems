@@ -6,6 +6,10 @@ In this project I aimed to filter a signal which has a Gaussian Noise N~(1,4) in
 
 ## Application
 ### Results of Funciton Made By Me 
+
+Function file can be accessed by [here](./MATLAB%20Files/my_mov_ave_filter.m)
+Application file can be accessed by [here](./MATLAB%20Files/my_own_func.m)
+
 The results are shown below:
 
 #### N =4 where N is the element number in filter
@@ -23,6 +27,8 @@ The results are shown below:
 ### Fılter Command Results
 Then I used the filter function which is included by MATLAB. It has the same working principle with my funciton and same advantages. The resultant graphs are represented below:
 
+Application file can be accessed by [here](./MATLAB%20Files/filter_function_application.m)
+
 
 #### N =4 where N is the element number in filter
 
@@ -39,6 +45,9 @@ Then I used the filter function which is included by MATLAB. It has the same wor
 ### Conv Results
 
 This time I used the conv command to filter the signal. It prevents the signal delay if used by 'same' argument in it. Same argument excludes the summations which has less element than the moving filter. It has the same length with the signal.
+
+Application file can be accessed by [here](./MATLAB%20Files/filtering_with_conv.m)
+
 
 #### N =4 where N is the element number in unit impulse response
 
