@@ -24,7 +24,8 @@ The results are shown below:
 
 ![N=12](./Result%20Graphs/own_func_fil_deg_12.jpg)
 
-### Fılter Command Results
+### Filter Command Results
+
 Then I used the filter function which is included by MATLAB. It has the same working principle with my funciton and same advantages. The resultant graphs are represented below:
 
 Application file can be accessed by [here](./MATLAB%20Files/filter_function_application.m)
@@ -52,6 +53,7 @@ Application file can be accessed by [here](./MATLAB%20Files/filtering_with_conv.
 #### N =4 where N is the element number in unit impulse response
 
 ![N=4](./Result%20Graphs/conv_N_4.jpg)
+
 #### N = 8
 
 ![N=8](./Result%20Graphs/conv_N_8.jpg)
@@ -63,26 +65,42 @@ Application file can be accessed by [here](./MATLAB%20Files/filtering_with_conv.
 
 
 ### Difference Equation Analysis
+
 You can reach the source code of this entire section from [here](./MATLAB%20Files/differenceeq.m)
 
 #### Analytical Analysis of the Unit Impulse Response of Systems
+
 Firstly we are going to determine the unit impulse responses for this systems, it is a great start to express the LTI systems. Our systems defined as:
 
+
 ![Systems1](./Result%20Graphs/diffeq1.png)
+
+
 ![Systems1](./Result%20Graphs/diffeq2.png)
+
+
 Firstly we do it with analytical solution as you can observe below:
 
 ![AnalyticalSolutions](./Other%20Graphical%20Content/analytical_sol.png)
 
 #### Matlab Analysis of the Unit Impulse Response of Systems
+
 Then we are going to find their unit impulse responses via Matlab. The results would be like that:
+
 ![uir1](./Result%20Graphs/difference_eq_1_initial_fixed.jpg)
+
+
 The unit impulse response which we found is slightly different from matlab evaluation because of the initial conditions. Because of the y[n-1] term there is no way to start the system from the sample 0 so i delay our signal 1 sample.
+
 
 ![uir2](./Result%20Graphs/difference_eq_2.jpg)
 
 Code Block:
+
+
 ![1](./Code%20Blocks/1.png)
+
+
 ![2](./Code%20Blocks/2.png)
 
 It is clear we've done the evaluations true.
@@ -101,12 +119,18 @@ Here is the resultant plot:
 
 And then we are going to use the convolution to determine the response of the system to this input. As we know from the LTI system analysis in an LTI system convolution of the input signal and the unit impulse response of the system would provide us the response of the system to this specified input signal.
 
+
 ![conv_formula](./Other%20Graphical%20Content/conv_formula.png)
 
+
 The graph we end up with is:
+
+
 ![convcommandblock](./Code%20Blocks/conv_codeblock.png)
 
 ![conv_results1](./Result%20Graphs/conv1.jpg)
+
+
 ![conv_results1](./Result%20Graphs/conv2.jpg)
 
 As you can see thhe zero value jump has been smoothened. That kind of jumps has the infinite frequency because there is a change occurs in a 0 sample time. So it is a high frequency change. We can accept this system as a low pass filter because of that. We will include more information in this documentation about this at the further sessions of the text.
@@ -114,9 +138,13 @@ As you can see thhe zero value jump has been smoothened. That kind of jumps has 
 
 To compare the filtration result we will perform a filter command on this signal. It must carry the arguments a which is a vector contains the coefficient of the output terms(y), and b which is a vector that contains the coefficients of the input terms(x). By doing this we can define the system by just using a filter function.
 
+
 ![4](./Code%20Blocks/4.png)
 
+
 Filtered signal is like:
+
+
 ![filteredsig](./Result%20Graphs/filtered_diffeq.jpg)
 
 While using this block we dont get the unnecessary summation terms at the end of the convolution graphs. Because it acts like a "same" argument taken convolution operation. Same argument provides a result which has the same length to our input signal.
@@ -131,10 +159,16 @@ As we can observe this system acts like a filter and we did the proper explanati
 4. Band Stop
 
 And we can detect what filter type is suitable for our system by looking this graphs:
+
+
 ![referenced_graph](./Other%20Graphical%20Content/Frequency-response-of-different-type-of-filters.png) (1)
 
+
 Let us plot the frequency response for the first system:
+
+
 ![freq_res](./Code%20Blocks/5.png)
+
 
 And we can easily see the type that is suitable for our case is the low pass filter. We can interpret this plot by saying "the filter  pass the low frequency signals but prevent the high frequency part."
 
