@@ -161,7 +161,7 @@ As we can observe this system acts like a filter and we did the proper explanati
 And we can detect what filter type is suitable for our system by looking this graphs:
 
 
-![referenced_graph](./Other%20Graphical%20Content/Frequency-response-of-different-type-of-filters.png) (1)
+![referenced_graph](./Other%20Graphical%20Content/Frequency-response-of-different-type-of-filters.png) (Figure 1)
 
 
 Let us plot the frequency response for the first system:
@@ -179,4 +179,4 @@ We obtain so much information about filters and how they performed in the signal
 
 ## References
 
-(1) Development of an improved scheme of Digital Beam Forming(DBF) in elevation for spaceborne Synthetic Aperture Radar(SAR) and single-pass SAR Tomography analysis, Ahmedul Haque, June 2016, ResearchGate, https://www.researchgate.net/figure/Frequency-response-of-different-type-of-filters_fig10_303856968
+(Figure 1) Development of an improved scheme of Digital Beam Forming(DBF) in elevation for spaceborne Synthetic Aperture Radar(SAR) and single-pass SAR Tomography analysis, Ahmedul Haque, June 2016, ResearchGate, https://www.researchgate.net/figure/Frequency-response-of-different-type-of-filters_fig10_303856968
