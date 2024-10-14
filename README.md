@@ -169,6 +169,8 @@ Let us plot the frequency response for the first system:
 
 ![freq_res](./Code%20Blocks/5.png)
 
+![Freq_res_plot](./Result%20Graphs/freq_resp.jpg)
+
 
 And we can easily see the type that is suitable for our case is the low pass filter. We can interpret this plot by saying "the filter  pass the low frequency signals but prevent the high frequency part."
 
