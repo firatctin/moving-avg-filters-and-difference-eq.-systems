@@ -133,7 +133,7 @@ The graph we end up with is:
 
 ![conv_results1](./Result%20Graphs/conv2.jpg)
 
-As you can see thhe zero value jump has been smoothened. That kind of jumps has the infinite frequency because there is a change occurs in a 0 sample time. So it is a high frequency change. We can accept this system as a low pass filter because of that. We will include more information in this documentation about this at the further sessions of the text.
+As you can see thhe zero value jump has been smoothened. That kind of jumps has the very high frequency because there is a change occurs in a 1 sample time. So it is a high frequency change. We can accept this system as a low pass filter because of that. We will include more information in this documentation about this at the further sessions of the text.
 
 
 To compare the filtration result we will perform a filter command on this signal. It must carry the arguments a which is a vector contains the coefficient of the output terms(y), and b which is a vector that contains the coefficients of the input terms(x). By doing this we can define the system by just using a filter function.
